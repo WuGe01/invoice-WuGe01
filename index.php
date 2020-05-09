@@ -7,6 +7,8 @@
   <title><?php include "./layout/title.php" ;?></title>
   <link rel="stylesheet" href="./plugins/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./plugins/jquery-3.5.0.min.js"></script>
+  <script src="./plugins/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="bg-dark">
@@ -15,11 +17,12 @@
   <div class="justify-content-center align-items-center d-flex mt-5">
   <form action="save_invoice.php" method="post">
   
-    <div class="card container shadow p-3 bg-light">
+    <div class="card container shadow p-3">
     <div class="btn-group mb-3 d-flex">
      
         <a href="list.php" type="button" class="btn btn-outline-secondary">發票列表</a>
-        <a href="invoice.php" type="button" class="btn btn-outline-secondary">輸入獎號</a>
+        <!-- <a href="invoice.php" type="button" class="btn btn-outline-secondary">輸入獎號</a> -->
+        <?php include "./layout/e_invoice.php" ;?>
         <a href="award.php" type="button" class="btn btn-outline-secondary">兌獎</a>
 
       </div>

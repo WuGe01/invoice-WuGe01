@@ -20,7 +20,7 @@ $row=$pdo->query($sql)->fetchAll();
 
 // 保留空間-登入判斷區
 
-echo "<table class='text-center'>";
+echo "<table class='text-center table'>";
 echo "<tr>";
 echo "<th>發票年份</th>";
 echo "<th>發票期份</th>";
@@ -58,6 +58,6 @@ echo "</tr>";
 }
 echo "</table>";
 ?>
-</div>
+</div>1
 </body>
 </html>
