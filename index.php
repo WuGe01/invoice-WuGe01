@@ -22,7 +22,7 @@
           <label ><?php echo date("Y-m-d");?></label>
         </div>     
       </div>
-      <div class="form-group row">
+      <div class="form-group ">
         <div class="col-2">         
           <label for="invoice_period">期別:</label>
         </div>
@@ -71,7 +71,15 @@
           <input type="text" class="form-control" id="invoice_expend" name="expend">
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">送出</button>
+      <div class="btn-group d-flex">
+        <button type="submit" class="btn btn-primary">送出</button>
+        <button type="reset" class="btn btn-primary">重設</button>
+      </div>
+      <div class="btn-group mt-3 d-flex">
+        <button type="button" class="btn btn-info">當期發票</button>
+        <button type="button" class="btn btn-info">輸入獎號</button>
+        <button type="button" class="btn btn-info">兌獎</button>
+      </div>
     </div>
   </form>
   </div>
