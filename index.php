@@ -9,11 +9,20 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-  <?php include "./layout/header.php" ;?>
-  <div class="vh-me justify-content-center align-items-center d-flex">
+<body class="bg-dark">
+  <!-- <?php include "./layout/header.php" ;?> -->
+  <h1 class="text-white d-flex mt-5 justify-content-center">統一發票兌獎系統</h1>
+  <div class="justify-content-center align-items-center d-flex mt-5">
   <form action="save_invoice.php" method="post">
-    <div class="container shadow p-3">
+  
+    <div class="card container shadow p-3 bg-light">
+    <div class="btn-group mb-3 d-flex">
+     
+        <a href="list.php" type="button" class="btn btn-outline-secondary">發票列表</a>
+        <a href="invoice.php" type="button" class="btn btn-outline-secondary">輸入獎號</a>
+        <a href="award.php" type="button" class="btn btn-outline-secondary">兌獎</a>
+
+      </div>
       <div class="form-group row">
         <div class="col-2"> 
           <label>今天:</label>
@@ -22,7 +31,22 @@
           <label ><?php echo date("Y-m-d");?></label>
         </div>     
       </div>
-      <div class="form-group ">
+
+      <div class="form-group row">
+        <div class="col-2">
+          <label for="invoice_years" >年份:</label>
+        </div>
+        <div class="col">
+        <select name="years" class="custom-select" id="invoice_years">
+            <option selected>請選擇發票年份</option>
+            <option value="<?php echo date("Y",strtotime(" -1 year"));?>"><?php echo date("Y",strtotime(" -1 year"));?></option>
+            <option value="<?php echo date("Y");?>"><?php echo date("Y");?></option>
+            <option value="<?php echo date("Y",strtotime(" 1 year"));?>"><?php echo date("Y",strtotime(" 1 year"));?></option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group row">
         <div class="col-2">         
           <label for="invoice_period">期別:</label>
         </div>
@@ -38,20 +62,8 @@
           </select>
         </div>
       </div>
-      <div class="form-group row">
-        <div class="col-2">
-          <label for="invoice_years" >年份:</label>
-        </div>
-        <div class="col">
-        <select name="years" class="custom-select" id="invoice_years">
-            <option selected>請選擇發票期別</option>
-            <option value="<?php echo date("Y",strtotime(" -1 year"));?>"><?php echo date("Y",strtotime(" -1 year"));?></option>
-            <option value="<?php echo date("Y");?>"><?php echo date("Y");?></option>
-            <option value="<?php echo date("Y",strtotime(" 1 year"));?>"><?php echo date("Y",strtotime(" 1 year"));?></option>
-          </select>
-        </div>
 
-      </div>
+
       <div class="form-group row">
         <div class="col-2">         
           <label for="invoice_code invoice_number">獎號:</label>
@@ -72,14 +84,10 @@
         </div>
       </div>
       <div class="btn-group d-flex">
+        <button type="reset" class="btn btn-warning">重設</button>
         <button type="submit" class="btn btn-primary">送出</button>
-        <button type="reset" class="btn btn-primary">重設</button>
       </div>
-      <div class="btn-group mt-3 d-flex">
-        <button type="button" class="btn btn-info">當期發票</button>
-        <button type="button" class="btn btn-info">輸入獎號</button>
-        <button type="button" class="btn btn-info">兌獎</button>
-      </div>
+
     </div>
   </form>
   </div>
