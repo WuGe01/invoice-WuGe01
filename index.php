@@ -11,10 +11,11 @@
 
 <body>
   <?php include "./layout/header.php" ;?>
+  <div class="vh-me justify-content-center align-items-center d-flex">
   <form action="save_invoice.php" method="post">
     <div class="container shadow p-3">
       <div class="form-group row">
-        <div class="col-1"> 
+        <div class="col-2"> 
           <label>今天:</label>
         </div>
         <div class="col"> 
@@ -22,7 +23,7 @@
         </div>     
       </div>
       <div class="form-group row">
-        <div class="col-1">         
+        <div class="col-2">         
           <label for="invoice_period">期別:</label>
         </div>
         <div class="col">
@@ -38,7 +39,7 @@
         </div>
       </div>
       <div class="form-group row">
-        <div class="col-1">
+        <div class="col-2">
           <label for="invoice_years" >年份:</label>
         </div>
         <div class="col">
@@ -52,7 +53,7 @@
 
       </div>
       <div class="form-group row">
-        <div class="col-1">         
+        <div class="col-2">         
           <label for="invoice_code invoice_number">獎號:</label>
         </div>
         <div class="col-2">
@@ -63,7 +64,7 @@
         </div>
       </div>
       <div class="form-group row">
-        <div div class="col-1">          
+        <div div class="col-2">          
           <label for="invoice_expend">花費:</label>
         </div>
         <div class="col">
@@ -73,6 +74,7 @@
       <button type="submit" class="btn btn-primary">送出</button>
     </div>
   </form>
+  </div>
 </body>
 
 </html>
