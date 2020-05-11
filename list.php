@@ -14,19 +14,23 @@ include "./layout/pdo.php";
     <!-- <?php include "./layout/header.php" ;?> -->
     <h1 class="text-white d-flex mt-5 justify-content-center">發票列表</h1>
     <div class="card container mt-5">
+
+
+<table class='text-center table'>
+<tr>
+<th>發票年份</th>
+<th>發票期份</th>
+<th>發票獎號</th>
+<th>發票金額</th>
+<th></th>
+</tr>
+    
 <?php
 $sql="select * from `invoices` order by `id`";
 $row=$pdo->query($sql)->fetchAll();
 
 // 保留空間-登入判斷區
 
-echo "<table class='text-center table'>";
-echo "<tr>";
-echo "<th>發票年份</th>";
-echo "<th>發票期份</th>";
-echo "<th>發票獎號</th>";
-echo "<th>發票金額</th>";
-echo "</tr>";
 foreach($row as $r){
 echo "<tr>";
 echo "<td>" . $r['years'] . "</td>";
@@ -54,10 +58,22 @@ switch ($r['period']){
 echo "</td>";
 echo "<td>" . $r['code'] . "-" . $r['number'] . "</td>";
 echo "<td>" . $r['expend'] . "</td>";
+
+echo "<td>";
+echo "<div class='btn-group-sm d-flex justify-content-end'>";
+echo "<a herf='#'  class='btn btn-warning text-white'>編輯</a>";
+echo "<a herf='#'  class='btn btn-danger text-white'>刪除</a>";
+echo "</div>";
+echo "</td>" ;
 echo "</tr>";
 }
-echo "</table>";
+
 ?>
-</div>1
+</table>
+
+  <div class="btn-group-lg justify-content-center d-flex" role="group">
+    <a href="index.php"  class="btn btn-secondary">回首頁</a>
+  </div>
+
 </body>
 </html>

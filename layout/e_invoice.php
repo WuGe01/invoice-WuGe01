@@ -13,13 +13,76 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form action="save_award.php" method="post">>
+        <form action="save_award.php" method="post">
         <div class="modal-body">
          
         
         <div class="form-group row">
-        <div div class="col-2">          
+        <div div class="col-3">          
           <label for="invoice_Special_award">特別獎:</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+        </div>
+        </div>
+        
+        <div class="form-group row">
+        <div div class="col-3">          
+          <label for="invoice_Special_award">特獎:</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+        </div>
+        </div>
+        
+        <div class="form-group row">
+        <div div class="col-3">          
+          <label for="invoice_Special_award">頭獎(一):</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+        </div>
+        </div>
+        
+        <div class="form-group row">
+        <div div class="col-3">          
+          <label for="invoice_Special_award">頭獎(二):</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+        </div>
+        </div>
+        
+        <div class="form-group row">
+        <div div class="col-3">          
+          <label for="invoice_Special_award">頭獎(三):</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+        </div>
+        </div>
+        
+        <div class="form-group row">
+        <div div class="col-3">          
+          <label for="invoice_Special_award">六獎:</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+        </div>
+        </div>
+        
+        <div class="form-group row">
+        <div div class="col-3">          
+          <label for="invoice_Special_award">增開六獎(一):</label>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+        </div>
+        </div>
+        
+        <div class="form-group row">
+        <div div class="col-3">          
+          <label for="invoice_Special_award">增開六獎(二):</label>
         </div>
         <div class="col">
           <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
