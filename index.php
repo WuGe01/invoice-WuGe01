@@ -15,7 +15,7 @@
   <!-- <?php include "./layout/header.php" ;?> -->
   <h1 class="text-white d-flex mt-5 justify-content-center">統一發票兌獎系統</h1>
   <div class="justify-content-center align-items-center d-flex mt-5">
-  <form action="save_invoice.php" method="post">
+
   
     <div class="card container shadow p-3">
     <div class="btn-group mb-3 d-flex">
@@ -26,6 +26,8 @@
         <a href="award.php" type="button" class="btn btn-outline-secondary">兌獎</a>
 
       </div>
+
+      <form action="save_invoice.php" method="post">
       <div class="form-group row">
         <div class="col-2"> 
           <label>今天:</label>
@@ -91,8 +93,8 @@
         <button type="submit" class="btn btn-primary">送出</button>
       </div>
 
-    </div>
-  </form>
+    </form>
+  </div>
   </div>
 </body>
 

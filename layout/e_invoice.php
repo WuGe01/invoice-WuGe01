@@ -136,7 +136,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-          <button type="button" class="btn btn-primary">確認</button>
+          <button type="submit" class="btn btn-primary">確認</button>
         </div>
         </form>
       </div>
