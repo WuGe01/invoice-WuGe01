@@ -62,64 +62,64 @@
         
         <div class="form-group row">
         <div div class="col-3">          
-          <label for="invoice_Special_award">特獎:</label>
+          <label for="invoice_S_award">特獎:</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+          <input type="text" class="form-control" id="invoice_S_award" name="S_award">
         </div>
         </div>
         
         <div class="form-group row">
         <div div class="col-3">          
-          <label for="invoice_Special_award">頭獎(一):</label>
+          <label for="invoice_h1_award">頭獎(一):</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+          <input type="text" class="form-control" id="invoice_h1_award" name="h1_award">
         </div>
         </div>
         
         <div class="form-group row">
         <div div class="col-3">          
-          <label for="invoice_Special_award">頭獎(二):</label>
+          <label for="invoice_h2_award">頭獎(二):</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+          <input type="text" class="form-control" id="invoice_h2_award" name="h2_award">
         </div>
         </div>
         
         <div class="form-group row">
         <div div class="col-3">          
-          <label for="invoice_Special_award">頭獎(三):</label>
+          <label for="invoice_h3_award">頭獎(三):</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+          <input type="text" class="form-control" id="invoice_h3_award" name="h3_award">
         </div>
         </div>
         
         <div class="form-group row">
         <div div class="col-3">          
-          <label for="invoice_Special_award">六獎:</label>
+          <label for="invoice_six_award">六獎:</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+          <input type="text" class="form-control" id="invoice_six_award" name="six_award">
         </div>
         </div>
         
         <div class="form-group row">
         <div div class="col-3">          
-          <label for="invoice_Special_award">增開六獎(一):</label>
+          <label for="invoice_six2_award">增開六獎(一):</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+          <input type="text" class="form-control" id="invoice_six2_award" name="six2_award">
         </div>
         </div>
         
         <div class="form-group row">
         <div div class="col-3">          
-          <label for="invoice_Special_award">增開六獎(二):</label>
+          <label for="invoice_six3_award">增開六獎(二):</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+          <input type="text" class="form-control" id="invoice_six3_award" name="six3_award">
         </div>
         </div>
         

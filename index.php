@@ -14,16 +14,16 @@
 <body class="bg-dark">
   <!-- <?php include "./layout/header.php" ;?> -->
   <h1 class="text-white d-flex mt-5 justify-content-center">統一發票兌獎系統</h1>
-  <div class="justify-content-center align-items-center d-flex mt-5">
+  <div class="justify-content-center align-items-center d-flex mt-5 container">
 
   
-    <div class="card container shadow p-3">
+    <div class="card  shadow p-3 ">
     <div class="btn-group mb-3 d-flex">
      
         <a href="list.php" type="button" class="btn btn-outline-secondary">發票列表</a>
-        <!-- <a href="invoice.php" type="button" class="btn btn-outline-secondary">輸入獎號</a> -->
         <?php include "./layout/e_invoice.php" ;?>
-        <a href="award.php" type="button" class="btn btn-outline-secondary">兌獎</a>
+        <?php include "./layout/e_award.php" ;?>
+
 
       </div>
 

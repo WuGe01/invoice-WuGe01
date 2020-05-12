@@ -74,7 +74,7 @@ echo "</tr>";
 </table>
 
   <div class="btn-group-lg justify-content-center d-flex" role="group">
-    <a href="index.php"  class="btn btn-secondary">回首頁</a>
+    <a href="index.php"  class="btn btn-secondary mb-3">回首頁</a>
   </div>
 
 </body>
