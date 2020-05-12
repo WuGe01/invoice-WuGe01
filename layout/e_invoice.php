@@ -17,6 +17,40 @@
         <div class="modal-body">
          
         
+
+
+
+        <div class="form-group row">
+        <div div class="col-3">          
+          <label for="invoice_years">年份:</label>
+        </div>
+        <div class="col">
+        <select name="years" class="custom-select" id="invoice_years">
+            <option selected>請選擇發票年份</option>
+            <option value="<?php echo date("Y",strtotime(" -1 year"));?>"><?php echo date("Y",strtotime(" -1 year"));?></option>
+            <option value="<?php echo date("Y");?>"><?php echo date("Y");?></option>
+            <option value="<?php echo date("Y",strtotime(" 1 year"));?>"><?php echo date("Y",strtotime(" 1 year"));?></option>
+          </select>
+        </div>
+        </div>
+
+        <div class="form-group row">
+        <div div class="col-3">          
+          <label for="invoice_period">期別:</label>
+        </div>
+        <div class="col">
+          <select name="period" class="custom-select" id="invoice_period">
+            <option selected>請選擇發票期別</option>
+            <option value="1">1,2月</option>
+            <option value="2">3,4月</option>
+            <option value="3">5,6月</option>
+            <option value="4">7,8月</option>
+            <option value="5">9,10月</option>
+            <option value="6">11,12月</option>
+          </select>
+        </div>
+        </div>
+
         <div class="form-group row">
         <div div class="col-3">          
           <label for="invoice_Special_award">特別獎:</label>

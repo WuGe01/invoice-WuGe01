@@ -22,7 +22,8 @@ if($res==1){
     // echo "period=".$_POST['code']."<br>";
     // echo "period=".$_POST['number']."<br>";
     // echo "period=".$_POST['expend']."<br>";
-    header("Refresh:1;url=index.php");
+    header("location:index.php");
+    // header("Refresh:1;url=index.php");
 }else{
     echo "新增失敗<br>";
     echo $sql."<br>";  
