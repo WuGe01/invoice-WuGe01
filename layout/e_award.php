@@ -1,31 +1,25 @@
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#invoice">
-  兌獎
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="invoice" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="invoiceLabel" aria-hidden="true">
+<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#award">
+兌獎
+</button>
+
+  <div class="modal fade" id="award" data-backdrop="static" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="invoiceLabel">要對哪一期</h5>
+          <h5 class="modal-title" id="awardLabel">請選要兌哪一期</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <form action="award.php" method="post">
         <div class="modal-body">
-         
-        
-
-
 
         <div class="form-group row">
         <div div class="col-3">          
-          <label for="invoice_years">年份:</label>
+          <label for="award_years">年份:</label>
         </div>
         <div class="col">
-        <select name="years" class="custom-select" id="invoice_years">
+        <select name="years" class="custom-select" id="award_years">
             <option selected>請選擇發票年份</option>
             <option value="<?php echo date("Y",strtotime(" -1 year"));?>"><?php echo date("Y",strtotime(" -1 year"));?></option>
             <option value="<?php echo date("Y");?>"><?php echo date("Y");?></option>
@@ -36,10 +30,10 @@
 
         <div class="form-group row">
         <div div class="col-3">          
-          <label for="invoice_period">期別:</label>
+          <label for="award_period">期別:</label>
         </div>
         <div class="col">
-          <select name="period" class="custom-select" id="invoice_period">
+          <select name="period" class="custom-select" id="award_period">
             <option selected>請選擇發票期別</option>
             <option value="1">1,2月</option>
             <option value="2">3,4月</option>

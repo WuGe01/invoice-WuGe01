@@ -62,7 +62,7 @@ echo "<td>" . $r['expend'] . "</td>";
 
 echo "<td>";
 echo "<div class='btn-group-sm d-flex justify-content-end'>";
-echo "<a href='editlist.php?id=" . $r['id']  . "'class='btn btn-warning text-white'>編輯</a>";
+echo "<a href='editlist.php?id=" . $r['id']  . "'class='btn btn-warning '>編輯</a>";
 echo "<a href='dellist.php?id=" . $r['id']  . "'class='btn btn-danger text-white'>刪除</a>";
 echo "</div>";
 echo "</td>" ;
