@@ -14,6 +14,19 @@
         <form action="award.php" method="post">
         <div class="modal-body">
 
+        <!-- <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <button class="btn btn-success" type="button">年份:</button>
+          </div>
+            <select name="years" class="custom-select" id="award_years">
+              <option selected>請選擇發票年份</option>
+              <option value="<?php echo date("Y",strtotime(" -1 year"));?>"><?php echo date("Y",strtotime(" -1 year"));?></option>
+              <option value="<?php echo date("Y");?>"><?php echo date("Y");?></option>
+              <option value="<?php echo date("Y",strtotime(" 1 year"));?>"><?php echo date("Y",strtotime(" 1 year"));?></option>
+          </select>
+        </div> -->
+
+
         <div class="form-group row">
         <div div class="col-3">          
           <label for="award_years">年份:</label>
