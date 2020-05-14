@@ -650,17 +650,9 @@ if($number == $Special_award){
 }
 echo "</tr>";
 };
-echo "<tr>";
-echo "<td colspan='4'>";
-echo "</td>";
-echo "<td>";
-echo "<div>";
-echo "<button type='button'  class='btn btn-outline-success '>合計:" . $money . "</button>";
-echo "</td>";
-echo "</div>";
-echo "</tr>";
 echo "</table>";
+
 echo "<div class= 'btn-group-lg justify-content-center d-flex mt-3' >";
-echo "<a href='index.php'  class='btn btn-secondary'>回首頁</a>";
+echo "<a href='index.php'  class='btn btn-secondary'>回首頁-獎金合計:" . $money . "元</a>";
 echo "</div>";
 ?>
