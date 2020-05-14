@@ -33,9 +33,9 @@
         </div>
         <div class="col">
         <select name="years" class="custom-select" id="award_years">
-            <option selected>請選擇發票年份</option>
+            <!-- <option selected>請選擇發票年份</option> -->
             <option value="<?php echo date("Y",strtotime(" -1 year"));?>"><?php echo date("Y",strtotime(" -1 year"));?></option>
-            <option value="<?php echo date("Y");?>"><?php echo date("Y");?></option>
+            <option selected value="<?php echo date("Y");?>"><?php echo date("Y");?></option>
             <option value="<?php echo date("Y",strtotime(" 1 year"));?>"><?php echo date("Y",strtotime(" 1 year"));?></option>
           </select>
         </div>
@@ -47,8 +47,8 @@
         </div>
         <div class="col">
           <select name="period" class="custom-select" id="award_period">
-            <option selected>請選擇發票期別</option>
-            <option value="1">1,2月</option>
+            <!-- <option selected>請選擇發票期別</option> -->
+            <option selected value="1">1,2月</option>
             <option value="2">3,4月</option>
             <option value="3">5,6月</option>
             <option value="4">7,8月</option>

@@ -97,7 +97,7 @@ $user=$pdo->query($sql)->fetch();
           <input type="text" class="form-control" id="invoice_code" name="code" value="<?php echo $user['code'] ;?>">
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_number" name="number" value="<?php echo $user['number'] ;?>">
+          <input type="number" class="form-control" id="invoice_number" name="number" value="<?php echo $user['number'] ;?>">
         </div>
       </div>
       <div class="form-group row">
@@ -105,7 +105,7 @@ $user=$pdo->query($sql)->fetch();
           <label for="invoice_expend">花費:</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_expend" name="expend" value="<?php echo $user['expend'] ;?>">
+          <input type="number" class="form-control" id="invoice_expend" name="expend" value="<?php echo $user['expend'] ;?>">
         </div>
       </div>
       <div class="btn-group d-flex">

@@ -25,10 +25,10 @@
           <label for="invoice_years">年份:</label>
         </div>
         <div class="col">
-        <select name="years" class="custom-select" id="invoice_years">
-            <option selected>請選擇發票年份</option>
+        <select name="years" class="custom-select" id="invoice_years" required>
+            <!-- <option selected>請選擇發票年份</option> -->
             <option value="<?php echo date("Y",strtotime(" -1 year"));?>"><?php echo date("Y",strtotime(" -1 year"));?></option>
-            <option value="<?php echo date("Y");?>"><?php echo date("Y");?></option>
+            <option selected value="<?php echo date("Y");?>"><?php echo date("Y");?></option>
             <option value="<?php echo date("Y",strtotime(" 1 year"));?>"><?php echo date("Y",strtotime(" 1 year"));?></option>
           </select>
         </div>
@@ -39,9 +39,9 @@
           <label for="invoice_period">期別:</label>
         </div>
         <div class="col">
-          <select name="period" class="custom-select" id="invoice_period">
-            <option selected>請選擇發票期別</option>
-            <option value="1">1,2月</option>
+          <select name="period" class="custom-select" id="invoice_period" required>
+            <!-- <option selected>請選擇發票期別</option> -->
+            <option selected value="1">1,2月</option>
             <option value="2">3,4月</option>
             <option value="3">5,6月</option>
             <option value="4">7,8月</option>
@@ -56,7 +56,7 @@
           <label for="invoice_Special_award">特別獎:</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_Special_award" name="Special_award">
+          <input type="number" class="form-control" id="invoice_Special_award" name="Special_award" required>
         </div>
         </div>
         
@@ -65,7 +65,7 @@
           <label for="invoice_S_award">特獎:</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_S_award" name="S_award">
+          <input type="number" class="form-control" id="invoice_S_award" name="S_award" required>
         </div>
         </div>
         
@@ -74,7 +74,7 @@
           <label for="invoice_h1_award">頭獎(一):</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_h1_award" name="h1_award">
+          <input type="number" class="form-control" id="invoice_h1_award" name="h1_award" required>
         </div>
         </div>
         
@@ -83,7 +83,7 @@
           <label for="invoice_h2_award">頭獎(二):</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_h2_award" name="h2_award">
+          <input type="number" class="form-control" id="invoice_h2_award" name="h2_award" required>
         </div>
         </div>
         
@@ -92,7 +92,7 @@
           <label for="invoice_h3_award">頭獎(三):</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_h3_award" name="h3_award">
+          <input type="number" class="form-control" id="invoice_h3_award" name="h3_award" required>
         </div>
         </div>
         
@@ -101,7 +101,7 @@
           <label for="invoice_six_award">六獎:</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_six_award" name="six_award">
+          <input type="number" class="form-control" id="invoice_six_award" name="six_award" required>
         </div>
         </div>
         
@@ -110,7 +110,7 @@
           <label for="invoice_six2_award">增開六獎(一):</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_six2_award" name="six2_award">
+          <input type="number" class="form-control" id="invoice_six2_award" name="six2_award">
         </div>
         </div>
         
@@ -119,7 +119,7 @@
           <label for="invoice_six3_award">增開六獎(二):</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_six3_award" name="six3_award">
+          <input type="number" class="form-control" id="invoice_six3_award" name="six3_award">
         </div>
         </div>
         

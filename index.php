@@ -74,10 +74,10 @@
           <label for="invoice_code invoice_number">獎號:</label>
         </div>
         <div class="col-2">
-          <input type="text" class="form-control" id="invoice_code" name="code">
+          <input type="text" class="form-control" id="invoice_code" name="code"  required>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_number" name="number">
+          <input type="number" class="form-control" id="invoice_number" name="number"  required>
         </div>
       </div>
       <div class="form-group row">
@@ -85,7 +85,7 @@
           <label for="invoice_expend">花費:</label>
         </div>
         <div class="col">
-          <input type="text" class="form-control" id="invoice_expend" name="expend">
+          <input type="number" class="form-control" id="invoice_expend" name="expend"  required>
         </div>
       </div>
       <div class="btn-group d-flex">

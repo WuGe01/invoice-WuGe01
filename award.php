@@ -17,7 +17,14 @@ session_start();
     <h1 class="text-white d-flex mt-5 justify-content-center">中獎清單</h1>
 
     <div class="card  shadow p-3 container justify-content-center align-items-center">
-
+    <table class='text-center table'>
+    <tr>
+    <th>發票年份</th>
+    <th>發票期份</th>
+    <th>發票獎號</th>
+    <th>發票金額</th>
+    <th>中獎獎金</th>
+    </tr>
     <?php include "./layout/ifaward.php"; ?>
       
     <div class= "btn-group-lg justify-content-center d-flex" >
