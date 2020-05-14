@@ -16,7 +16,7 @@ session_start();
     <!-- <?php include "./layout/header.php" ;?> -->
     <h1 class="text-white d-flex mt-5 justify-content-center">中獎清單</h1>
 
-    <div class="card  shadow p-3 container justify-content-center align-items-center">
+    <div class="card  shadow p-3 container justify-content-center align-items-center mt-5">
     <table class='text-center table'>
     <tr>
     <th>發票年份</th>
@@ -27,9 +27,9 @@ session_start();
     </tr>
     <?php include "./layout/ifaward.php"; ?>
       
-    <div class= "btn-group-lg justify-content-center d-flex" >
+    <!-- <div class= "btn-group-lg justify-content-center d-flex" >
     <a href="index.php"  class="btn btn-secondary mt-3">回首頁</a>
-    </div>
+    </div> -->
     </div>
 
 
