@@ -84,6 +84,36 @@ if($number == $Special_award){
     echo "</td>";
     $money=($money+2000000);
     // 頭獎1
+}else if($number == $h1_award){
+    echo "<td>" . $r['years'] . "</td>";
+    echo "<td>";
+    switch ($r['period']){
+        case "1":
+            echo "1,2月";
+            break;
+        case "2":
+            echo "3,4月";
+            break;
+        case "3":
+            echo "5,6月";
+            break;
+        case "4":
+            echo "7,8月";
+            break;
+        case "5":
+            echo "9,10月";
+            break;
+        case "6":
+            echo "11,12月";
+            break;
+    }
+    echo "</td>";
+    echo "<td>" . $r['code'] . "-" . $r['number'] . "</td>";
+    echo "<td>" . $r['expend'] . "</td>";
+    echo "<td>";
+    echo "200,000元";
+    echo "</td>";
+    $money=($money+200000);
 }else if(substr($number, 0,7) == substr($h1_award, 0,7)){
     echo "<td>" . $r['years'] . "</td>";
     echo "<td>";
@@ -241,6 +271,36 @@ if($number == $Special_award){
     
 
     // 頭獎2
+}else if($number == $h2_award){
+    echo "<td>" . $r['years'] . "</td>";
+    echo "<td>";
+    switch ($r['period']){
+        case "1":
+            echo "1,2月";
+            break;
+        case "2":
+            echo "3,4月";
+            break;
+        case "3":
+            echo "5,6月";
+            break;
+        case "4":
+            echo "7,8月";
+            break;
+        case "5":
+            echo "9,10月";
+            break;
+        case "6":
+            echo "11,12月";
+            break;
+    }
+    echo "</td>";
+    echo "<td>" . $r['code'] . "-" . $r['number'] . "</td>";
+    echo "<td>" . $r['expend'] . "</td>";
+    echo "<td>";
+    echo "200,000元";
+    echo "</td>";
+    $money=($money+200000);
 }else if(substr($number, 0,7) == substr($h2_award, 0,7)){
     echo "<td>" . $r['years'] . "</td>";
     echo "<td>";
@@ -398,6 +458,36 @@ if($number == $Special_award){
     
 
     // 頭獎3
+}else if($number == $h3_award){
+    echo "<td>" . $r['years'] . "</td>";
+    echo "<td>";
+    switch ($r['period']){
+        case "1":
+            echo "1,2月";
+            break;
+        case "2":
+            echo "3,4月";
+            break;
+        case "3":
+            echo "5,6月";
+            break;
+        case "4":
+            echo "7,8月";
+            break;
+        case "5":
+            echo "9,10月";
+            break;
+        case "6":
+            echo "11,12月";
+            break;
+    }
+    echo "</td>";
+    echo "<td>" . $r['code'] . "-" . $r['number'] . "</td>";
+    echo "<td>" . $r['expend'] . "</td>";
+    echo "<td>";
+    echo "200,000元";
+    echo "</td>";
+    $money=($money+200000);
 }else if(substr($number, 0,7) == substr($h3_award, 0,7)){
     echo "<td>" . $r['years'] . "</td>";
     echo "<td>";
