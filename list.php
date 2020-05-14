@@ -27,7 +27,9 @@ session_start();
 </tr>
     
 <?php
-$sql="select * from `invoices` order by `id`";
+$years=$_POST['years'];
+$period=$_POST['period'];
+$sql="select * from `invoices` where `period` = '$period' AND `years` = '$years' order by `id`";
 $row=$pdo->query($sql)->fetchAll();
 
 // 保留空間-登入判斷區

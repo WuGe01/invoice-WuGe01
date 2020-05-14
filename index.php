@@ -15,15 +15,13 @@
   <!-- <?php include "./layout/header.php" ;?> -->
   <h1 class="text-white d-flex mt-5 justify-content-center">統一發票兌獎系統</h1>
   <div class="justify-content-center align-items-center d-flex mt-5 container">
-
-  
+ 
     <div class="card  shadow p-3 ">
     <div class="btn-group mb-3 d-flex">
      
-        <a href="list.php" type="button" class="btn btn-outline-secondary">發票列表</a>
+        <?php include "./layout/e_list.php" ;?>
         <?php include "./layout/e_invoice.php" ;?>
         <?php include "./layout/e_award.php" ;?>
-
 
       </div>
 
