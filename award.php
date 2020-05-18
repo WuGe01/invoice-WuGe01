@@ -15,6 +15,7 @@ if(empty($_POST['id']) == 0){
         'six2_award'=>$_POST['six2_award'],
         'six3_award'=>$_POST['six3_award']
     ];   
+    save("award",$date);
 }else{
     $date=[
         'period'=>$_POST['period'],
@@ -28,8 +29,9 @@ if(empty($_POST['id']) == 0){
         'six2_award'=>$_POST['six2_award'],
         'six3_award'=>$_POST['six3_award']
     ];
+    save("award",$date);
 }
-save("award",$date);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

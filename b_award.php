@@ -101,8 +101,8 @@ $row=find("award",$date);
     ?>
     </div>
     <form action="award.php" method="post">
-        <input type="number" name="years" value="<?=$row[0]['years'];?>" hidden>
-        <input type="number" name="period" value="<?=$row[0]['period'];?>" hidden>
+        <input type="number" name="years" value="<?=$years;?>" hidden>
+        <input type="number" name="period" value="<?=$period;?>" hidden>
 <?php 
 if(empty($row[0]['id']) == 0){
     echo "<input type='number' name='id' value=". $row[0]['id'] ." hidden>";
