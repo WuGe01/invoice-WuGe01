@@ -1,12 +1,12 @@
-<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#award">
+<button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#list">
 發票列表
 </button>
 
-  <div class="modal fade" id="award" data-backdrop="static" tabindex="-1" role="dialog">
+  <div class="modal fade" id="list" data-backdrop="static" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="awardLabel">請問查詢哪一期發票</h5>
+          <h5 class="modal-title" id="listLabel">請問查詢哪一期發票</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -17,10 +17,10 @@
 
         <div class="form-group row">
         <div div class="col-3">          
-          <label for="award_years">年份:</label>
+          <label for="list_years">年份:</label>
         </div>
         <div class="col">
-        <select name="years" class="custom-select" id="award_years">
+        <select name="years" class="custom-select" id="list_years">
 
             <option value="<?php echo date("Y",strtotime(" -1 year"));?>"><?php echo date("Y",strtotime(" -1 year"));?></option>
             <option selected value="<?php echo date("Y");?>"><?php echo date("Y");?></option>
@@ -31,10 +31,10 @@
 
         <div class="form-group row">
         <div div class="col-3">          
-          <label for="award_period">期別:</label>
+          <label for="list_period">期別:</label>
         </div>
         <div class="col">
-          <select name="period" class="custom-select" id="award_period">
+          <select name="period" class="custom-select" id="list_period">
             <option selected value="1">1,2月</option>
             <option value="2">3,4月</option>
             <option value="3">5,6月</option>

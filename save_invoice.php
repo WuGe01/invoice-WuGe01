@@ -1,6 +1,5 @@
 <?php
 include_once "./layout/pdo.php";
-
 session_start();
 $date=[
     'period'=>$_POST['period'],
@@ -13,8 +12,8 @@ $sql=save("invoices",$date);
 
 
   
-$res=$pdo->exec($sql);
-if($res==1){
+// $res=$pdo->exec($sql);
+if($sql==1){
     header("location:index.php");
 }else{
     echo $sql."<br>";  

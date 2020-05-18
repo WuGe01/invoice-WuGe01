@@ -16,9 +16,6 @@
         <form action="save_award.php" method="post">
         <div class="modal-body">
          
-        
-
-
 
         <div class="form-group row">
         <div div class="col-3">          
@@ -123,16 +120,6 @@
         </div>
         </div>
         
-        
-        
-        
-        
-        
-        
-        
-        
-
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>

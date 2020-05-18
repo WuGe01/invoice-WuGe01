@@ -18,7 +18,7 @@
  
     <div class="card  shadow p-3 ">
     <div class="btn-group mb-3 d-flex">
-     
+        
         <?php include "./layout/e_list.php" ;?>
         <?php include "./layout/e_invoice.php" ;?>
         <?php include "./layout/e_award.php" ;?>
