@@ -51,6 +51,7 @@ save("award",$date);
     <th>發票期份</th>
     <th>發票獎號</th>
     <th>發票金額</th>
+    <th>獎項</th>
     <th>中獎獎金</th>
     </tr>
     <?php include "./layout/ifaward.php"; ?>

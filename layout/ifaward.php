@@ -45,6 +45,7 @@ if($number == $Special_award){
     echo "</td>";
     echo "<td>" . $r['code'] . "-" . $r['number'] . "</td>";
     echo "<td>" . $r['expend'] . "</td>";
+    echo "<td>特別獎</td>";
     echo "<td>";
     echo "10,000,000元";
     echo "</td>";
@@ -75,6 +76,7 @@ if($number == $Special_award){
     echo "</td>";
     echo "<td>" . $r['code'] . "-" . $r['number'] . "</td>";
     echo "<td>" . $r['expend'] . "</td>";
+    echo "<td>特獎</td>";
     echo "<td>";
     echo "2,000,000元";
     echo "</td>";
@@ -105,6 +107,7 @@ if($number == $Special_award){
     echo "</td>";
     echo "<td>" . $r['code'] . "-" . $r['number'] . "</td>";
     echo "<td>" . $r['expend'] . "</td>";
+    echo "<td>頭獎</td>";
     echo "<td>";
     echo "200,000元";
     echo "</td>";
@@ -135,6 +138,7 @@ if($number == $Special_award){
     echo "</td>";
     echo "<td>" . $r['code'] . "-" . $r['number'] . "</td>";
     echo "<td>" . $r['expend'] . "</td>";
+    echo "<td>二獎</td>";
     echo "<td>";
     echo "40,000元";
     echo "</td>";
@@ -165,6 +169,7 @@ if($number == $Special_award){
     echo "</td>";
     echo "<td>" . $r['code'] . "-" . $r['number'] . "</td>";
     echo "<td>" . $r['expend'] . "</td>";
+    echo "<td>三獎</td>";
     echo "<td>";
     echo "10,000元";
     echo "</td>";
@@ -195,6 +200,7 @@ if($number == $Special_award){
     echo "</td>";
     echo "<td>" . $r['code'] . "-" . $r['number'] . "</td>";
     echo "<td>" . $r['expend'] . "</td>";
+    echo "<td>四獎</td>";
     echo "<td>";
     echo "4,000元";
     echo "</td>";
@@ -225,6 +231,7 @@ if($number == $Special_award){
     echo "</td>";
     echo "<td>" . $r['code'] . "-" . $r['number'] . "</td>";
     echo "<td>" . $r['expend'] . "</td>";
+    echo "<td>五獎</td>";
     echo "<td>";
     echo "1,000元";
     echo "</td>";
@@ -255,6 +262,7 @@ if($number == $Special_award){
     echo "</td>";
     echo "<td>" . $r['code'] . "-" . $r['number'] . "</td>";
     echo "<td>" . $r['expend'] . "</td>";
+    echo "<td>六獎</td>";
     echo "<td>";
     echo "200元";
     echo "</td>";
