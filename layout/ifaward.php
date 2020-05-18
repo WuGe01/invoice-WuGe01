@@ -5,6 +5,8 @@ $sql1="select * from `invoices` where `period` = '$period' AND `years` = '$years
 $sql2="select * from `award` where `period` = '$period' AND `years` = '$years' ";
 $row1=$pdo->query($sql1)->fetchAll(PDO::FETCH_ASSOC);
 $row2=$pdo->query($sql2)->fetch(PDO::FETCH_ASSOC);
+// 把錯誤藏起來
+ini_set('display_errors','off');
 $Special_award=strrev($row2['Special_award']);
 $S_award=strrev($row2['S_award']);
 $h1_award=strrev($row2['h1_award']);
@@ -13,7 +15,7 @@ $h3_award=strrev($row2['h3_award']);
 $six_award=strrev($row2['six_award']);
 $six2_award=strrev($row2['six2_award']);
 $six3_award=strrev($row2['six3_award']);
-
+ini_set('display_errors','on');
 
 
 // echo "<table class='text-center table'>";

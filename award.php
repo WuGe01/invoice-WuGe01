@@ -1,7 +1,35 @@
 <?php
 include "./layout/pdo.php";
 session_start();
-
+if(empty($_POST['id']) == 0){
+    $date=[
+        'id'=>$_POST['id'],
+        'period'=>$_POST['period'],
+        'years'=>$_POST['years'],
+        'Special_award'=>$_POST['Special_award'],
+        'S_award'=>$_POST['S_award'],
+        'h1_award'=>$_POST['h1_award'],
+        'h2_award'=>$_POST['h2_award'],
+        'h3_award'=>$_POST['h3_award'],
+        'six_award'=>$_POST['six_award'],
+        'six2_award'=>$_POST['six2_award'],
+        'six3_award'=>$_POST['six3_award']
+    ];   
+}else{
+    $date=[
+        'period'=>$_POST['period'],
+        'years'=>$_POST['years'],
+        'Special_award'=>$_POST['Special_award'],
+        'S_award'=>$_POST['S_award'],
+        'h1_award'=>$_POST['h1_award'],
+        'h2_award'=>$_POST['h2_award'],
+        'h3_award'=>$_POST['h3_award'],
+        'six_award'=>$_POST['six_award'],
+        'six2_award'=>$_POST['six2_award'],
+        'six3_award'=>$_POST['six3_award']
+    ];
+}
+save("award",$date);
 ?>
 <!DOCTYPE html>
 <html lang="en">

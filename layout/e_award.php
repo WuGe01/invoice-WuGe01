@@ -11,7 +11,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form action="award.php" method="post">
+        <form action="b_award.php" method="post">
         <div class="modal-body">
 
         <!-- <div class="input-group mb-3">
