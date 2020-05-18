@@ -76,4 +76,7 @@ function all($table,...$v){
     }
     return $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 }
+function to ($ual){
+    header("location:$ual");
+}
 ?>
