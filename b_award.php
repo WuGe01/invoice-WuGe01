@@ -43,51 +43,63 @@ $row=find("award",$date);
     <div class="card shadow p-3 col-6">
     <div class="btn-group mb-3 d-flex row">
 
-    <div class="col p-1 ml-2">    
-    <form action="#" method="post">
-    <input type="number" name="years" value="<?=$years;?>" hidden>
-    <input type="number" name="period" value="1" hidden>
-    <button type="submit" class="btn btn-outline-secondary p-2 w-100">1.2月</button>
-    </form>
+    <?php
+    if($period != 1){       
+    echo "<div class='col p-1 ml-2 mr-2'>  ";  
+    echo "<form action='#' method='post'>";
+    echo "<input type='number' name='years' value=". $years ." hidden>";
+    echo "<input type='number' name='period' value='1' hidden>";
+    echo  "<button type='submit' class='btn btn-outline-secondary p-2 w-100'>1.2月</button>";
+    echo "</form>";
+    echo "</div>";
+    }
+    if($period != 2){       
+    echo "<div class='col p-1 ml-2 mr-2'>  ";  
+    echo "<form action='#' method='post'>";
+    echo "<input type='number' name='years' value=". $years ." hidden>";
+    echo "<input type='number' name='period' value='2' hidden>";
+    echo  "<button type='submit' class='btn btn-outline-secondary p-2 w-100'>3.4月</button>";
+    echo "</form>";
+    echo "</div>";
+    }
+    if($period != 3){       
+    echo "<div class='col p-1 ml-2 mr-2'>  ";  
+    echo "<form action='#' method='post'>";
+    echo "<input type='number' name='years' value=". $years ." hidden>";
+    echo "<input type='number' name='period' value='3' hidden>";
+    echo  "<button type='submit' class='btn btn-outline-secondary p-2 w-100'>5.6月</button>";
+    echo "</form>";
+    echo "</div>";
+    }
+    if($period != 4){       
+    echo "<div class='col p-1 ml-2 mr-2'>  ";  
+    echo "<form action='#' method='post'>";
+    echo "<input type='number' name='years' value=". $years ." hidden>";
+    echo "<input type='number' name='period' value='4' hidden>";
+    echo  "<button type='submit' class='btn btn-outline-secondary p-2 w-100'>7.8月</button>";
+    echo "</form>";
+    echo "</div>";
+    }
+    if($period != 5){       
+    echo "<div class='col p-1 ml-2 mr-2'>  ";  
+    echo "<form action='#' method='post'>";
+    echo "<input type='number' name='years' value=". $years ." hidden>";
+    echo "<input type='number' name='period' value='5' hidden>";
+    echo  "<button type='submit' class='btn btn-outline-secondary p-2 w-100'>9.10月</button>";
+    echo "</form>";
+    echo "</div>";
+    }
+    if($period != 6){       
+    echo "<div class='col p-1 ml-2 mr-2'>  ";  
+    echo "<form action='#' method='post'>";
+    echo "<input type='number' name='years' value=". $years ." hidden>";
+    echo "<input type='number' name='period' value='6' hidden>";
+    echo  "<button type='submit' class='btn btn-outline-secondary p-2 w-100'>11.12月</button>";
+    echo "</form>";
+    echo "</div>";
+    }
+    ?>
     </div>
-    <div class="col p-1">    
-    <form action="#" method="post">
-    <input type="number" name="years" value="<?=$years;?>" hidden>
-    <input type="number" name="period" value="2" hidden>
-    <button type="submit" class="btn btn-outline-secondary p-2 w-100">3.4月</button>
-    </form>
-    </div>
-    <div class="col p-1">    
-    <form action="#" method="post">
-    <input type="number" name="years" value="<?=$years;?>" hidden>
-    <input type="number" name="period" value="3" hidden>
-    <button type="submit" class="btn btn-outline-secondary p-2 w-100">5.6月</button>
-    </form>
-    </div>
-    <div class="col p-1">    
-    <form action="#" method="post">
-    <input type="number" name="years" value="<?=$years;?>" hidden>
-    <input type="number" name="period" value="4" hidden>
-    <button type="submit" class="btn btn-outline-secondary p-2 w-100">7.8月</button>
-    </form>
-    </div>
-    <div class="col p-1">    
-    <form action="#" method="post">
-    <input type="number" name="years" value="<?=$years;?>" hidden>
-    <input type="number" name="period" value="5" hidden>
-    <button type="submit" class="btn btn-outline-secondary p-2 w-100">9.10月</button>
-    </form>
-    </div>
-    <div class="col p-1 mr-2">    
-    <form action="#" method="post">
-    <input type="number" name="years" value="<?=$years;?>" hidden>
-    <input type="number" name="period" value="6" hidden>
-    <button type="submit" class="btn btn-outline-secondary p-2 w-100">11.12月</button>
-    </form>
-    </div>
-
-
-      </div>
     <form action="award.php" method="post">
         <input type="number" name="years" value="<?=$row[0]['years'];?>" hidden>
         <input type="number" name="period" value="<?=$row[0]['period'];?>" hidden>
