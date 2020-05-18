@@ -9,7 +9,7 @@ for($i=0;$i<$num;$i++){
         'years'=>2020,
         'code'=>$code,
         'number'=>rand(12345678,87654321),
-        'period'=>rand(100,10000)
+        'expend'=>rand(100,10000)
 
     ];
     save("invoices",$date);

@@ -17,6 +17,7 @@ function find($table,$id){
     $r=$pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     return $r;
 }
+
 function save($table,$arg){
     global $pdo;
     if(isset($arg['id'])){
