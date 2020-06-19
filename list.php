@@ -28,13 +28,19 @@ session_start();
 </tr>
     
 <?php
-$years=$_POST['years'];
-$period=$_POST['period'];
-$sql="select * from `invoices` where `period` = '$period' AND `years` = '$years' order by `id`";
+$years=(!empty($_POST['years']))?$_POST['years']:$_GET['y'];
+$period=(!empty($_POST['period']))?$_POST['period']:$_GET['pe'];
+$sql2="SELECT count(*) FROM `invoices` where `period` = '$period' AND `years` = '$years' order by `id`";
+$total=$pdo->query($sql2)->fetchcolumn();
+$num=10;
+$pages=ceil($total/$num);
+$now=(!empty($_GET['p']))?$_GET['p']:1;
+($now>$pages)?$now=$pages:$now;
+($now<1)?$now=1:$now;
+$start=($now-1)*$num;
+$sql="select * from `invoices` where `period` = '$period' AND `years` = '$years' order by `id` limit $start,$num";
 $row=$pdo->query($sql)->fetchAll();
-
 // 保留空間-登入判斷區
-
 foreach($row as $r){
 echo "<tr>";
 echo "<td>" . $r['years'] . "</td>";
@@ -75,8 +81,10 @@ echo "</tr>";
 
 ?>
 </table>
-  <div class="btn-group-lg justify-content-center d-flex" role="group">
+  <div class="btn-group-lg justify-content-between d-flex" role="group">
+    <a href="?p=<?=($now-1);?>&y=<?=$years;?>&pe=<?=$period;?>"  class="btn btn-secondary mb-3">上一頁</a>
     <a href="index.php"  class="btn btn-secondary mb-3">回首頁</a>
+    <a href="?p=<?=($now+1);?>&y=<?=$years;?>&pe=<?=$period;?>"  class="btn btn-secondary mb-3">下一頁</a>
   </div>
 
 </body>
