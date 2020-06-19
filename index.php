@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,6 @@
 </head>
 
 <body class="bg-dark">
-  <!-- <?php include "./layout/header.php" ;?> -->
   <h1 class="text-white d-flex mt-5 justify-content-center">統一發票兌獎系統</h1>
   <div class="justify-content-center align-items-center d-flex mt-5 container">
  
@@ -23,7 +21,6 @@
         <?php include "./layout/e_award.php" ;?>
 
       </div>
-
       <form action="save_invoice.php" method="post">
       <div class="form-group row">
         <div class="col-2"> 
@@ -33,7 +30,6 @@
           <label ><?php echo date("Y-m-d");?></label>
         </div>     
       </div>
-
       <div class="form-group row">
         <div class="col-2">
           <label for="invoice_years" >年份:</label>
@@ -64,8 +60,6 @@
           </select>
         </div>
       </div>
-
-
       <div class="form-group row">
         <div class="col-2">         
           <label for="invoice_code invoice_number">獎號:</label>
@@ -89,10 +83,8 @@
         <button type="reset" class="btn btn-warning">重設</button>
         <button type="submit" class="btn btn-primary">送出</button>
       </div>
-
     </form>
   </div>
   </div>
 </body>
-
 </html>

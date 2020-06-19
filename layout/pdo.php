@@ -1,7 +1,6 @@
 <?php
-$dns="mysql:host=localhost;charset=utf8;dbname=invoice";
+$dns="mysql:host=localhost;charset=utf8;dbname=test";
 $pdo=new PDO($dns,"root","");
-
 date_default_timezone_set("Asia/Taipei");
 function find($table,$id){
     global $pdo;
@@ -17,7 +16,6 @@ function find($table,$id){
     $r=$pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     return $r;
 }
-
 function save($table,$arg){
     global $pdo;
     if(isset($arg['id'])){
@@ -45,12 +43,14 @@ function nums($table,...$b){
             $tmp[]=sprintf("`%s` = '%s'",$key,$balue);         
         }
         $sql = $sql . " where " . join(" && ", $tmp);
+    }else{
+        $sql=$sql . $b[0];
     }
-    if(isset($b[1])){
-        $sql = $sql . $v[1];
+    if(!empty($b[1])){
+        $sql=$sql . $b[1];    
     }
-    echo $sql . "<br>";
-    echo $pdo->query($sql)->fetchcolumn() . "<hr>";
+
+    return $pdo->query($sql)->fetchcolumn();
 }
 function del($table,$b){
     global $pdo;

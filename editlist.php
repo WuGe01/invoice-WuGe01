@@ -24,7 +24,7 @@ $user=$pdo->query($sql)->fetch();
   <h1 class="text-white d-flex mt-5 justify-content-center">統一發票編輯</h1>
   <div class="justify-content-center align-items-center d-flex mt-5">
   <form action="edit_invoice.php" method="post">
-  
+
     <div class="card container shadow p-3">
 
       <div class="form-group row">

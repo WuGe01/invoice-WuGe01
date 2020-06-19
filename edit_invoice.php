@@ -14,9 +14,9 @@ $sql="update `invoices` set `years`='$years', `period`='$period', `code`='$code'
 $res=$pdo->exec($sql);
 
 if($res){
-    header("location:list.php");
+    header("location:index.php");
 }else{
-    header("location:list.php");
+    header("location:index.php");
     echo "<h1><div>更新失敗</div></h1>";
     // header("Refresh:3;url=list.php");
     echo $sql;

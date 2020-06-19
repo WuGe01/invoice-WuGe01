@@ -8,8 +8,7 @@ $sql="delete from invoices where `id`='$id'";
 $res=$pdo->exec($sql);
 
 if($res>0){
-    header("location:list.php");
-    // echo "01";
+    header("location:index.php");
 }else{
     echo "失敗" . "<br>";
     echo $sql ;

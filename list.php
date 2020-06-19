@@ -10,6 +10,7 @@ session_start();
     <title><?php include "./layout/title.php" ;?></title>
     <link rel="stylesheet" href="./plugins/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./plugins/jquery-3.5.0.min.js"></script>
 </head>
 <body class="bg-dark">
     <!-- <?php include "./layout/header.php" ;?> -->
@@ -74,7 +75,6 @@ echo "</tr>";
 
 ?>
 </table>
-
   <div class="btn-group-lg justify-content-center d-flex" role="group">
     <a href="index.php"  class="btn btn-secondary mb-3">回首頁</a>
   </div>

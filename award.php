@@ -31,7 +31,6 @@ if(empty($_POST['id']) == 0){
     ];
     save("award",$date);
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
